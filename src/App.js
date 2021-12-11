@@ -4,11 +4,13 @@ import Dashboard from "./components/dashboard/Dashboard";
 import LogIn from "./components/auth/LogIn";
 import NewsDetails from "./components/news/NewsDetails";
 import AddNews from "./components/news/AddNews";
+import Header from "./components/Header/Header";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
+                <Header />
                 <Navbar/>
                 <Routes>
                     <Route exact path={'/'} element={<Dashboard/>}/>

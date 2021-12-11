@@ -1,36 +1,30 @@
-import { useState, useEffect } from 'react';
-import './weather.css'
+import React, {useState, useEffect} from "react";
+import axios from "axios";
 
-const API_KEY = '10bddaa697444e217f0c7f6b862097bd';
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=${API_KEY}&units=metric`
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Kazan,ru&appid=32691ad2398c77efeede66453f9e1b8f&units=metric';
 
-const ExchangeRate = () => {
+function Weather() {
     const [isLoading, setIsLoading] = useState(false)
     const [data, setData] = useState()
 
-    const gettingWeather = async () => {
+    const gettingCoin = async () => {
         setIsLoading(true)
-        await fetch(apiUrl)
-            .then(res => res.json())
-            .then(data => {
-                setData(data)
-                setIsLoading(false)
-            })
+        await axios.get(apiUrl)
+            .then(res => console.log("res", res.data))
+        setData(data)
+        setIsLoading(false)
     }
 
-    useEffect(() => {
-        gettingWeather()
-    }, [])
+useEffect(() => {
+    gettingCoin()
+}, [])
 
-    if(isLoading || !data){
-        return <div>Loading...</div>
-    }
-
-    return (
-        <div className={'weather-wrapper'}>
-            <p>Temperature in Moscow: {Math.round(data.main.temp)} degrees</p>
-        </div>
-    )
+if (isLoading || !data) {
+    return <div>загрузка...</div>
 }
 
-export default ExchangeRate;
+return <div> В Казани {data?.main?.temp} ° </div>
+}
+
+
+export default Weather;
