@@ -55,6 +55,7 @@
 }
 
 .card__title {
+  margin-bottom: 10px;
   font-size: 20px;
   color: #303030;
 }
@@ -62,6 +63,7 @@
 .description {
   max-width: fit-content;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .post__icons {
@@ -94,11 +96,12 @@
 
 .news-detailed__img {
   display: block;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 300px;
-  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .form__textarea:nth-child(1) {

@@ -8,7 +8,7 @@ const NewsList = ({news}) => {
             <div className="catalog-container-title">
                 <h2 className="catalog-title">Новости IT, технологий и бизнеса</h2>
             </div>
-            <div className="catalog-container">
+            <div className="catalog-container" news={news}>
                 {
                     news && news.map(item => {
                         return (

@@ -3,7 +3,7 @@ import NewsList from "../news/NewsList";
 import {connect} from "react-redux";
 import './Dashboard.css'
 
-const Dashboard = (props) =>  {
+const Content = (props) =>  {
     
     const { news } = props;
         return (
@@ -23,4 +23,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(Dashboard)
+export default connect(mapStateToProps)(Content)
