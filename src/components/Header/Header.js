@@ -22,11 +22,11 @@ const Header = () => {
             </div>
 
 
-            <Link to={'add'} className="header__button button">
+            <Link to={'addNews'} className="header__button button">
                 + Новость
             </Link>
 
-            <Link to={'autorization'} className="header__button sign button">
+            <Link to={'logIn'} className="header__button sign button">
                 Войти
             </Link>
 

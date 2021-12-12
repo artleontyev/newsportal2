@@ -1,0 +1,26 @@
+.error {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error__number {
+    font-size: 300px;
+    color: darkorange;
+}
+
+.error__text {
+    font-size: 70px;
+    color: white;
+}
+
+.button__error {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+

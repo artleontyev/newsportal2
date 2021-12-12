@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {createNews} from "../../store/actions/newsActions";
 import {connect} from "react-redux";
+import './news.css';
 
 const AddNews = (props) => {
     const [title, setTitle] = useState('')

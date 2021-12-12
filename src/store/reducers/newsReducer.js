@@ -4,39 +4,46 @@ const initState = {
     news: [
         {
             id: nanoid(),
-            image: 'https://image.cnbcfm.com/api/v1/image/106963872-1634825109007-gettyimages-1347891665-_e6w4500_2021102133201285.jpeg?v=1634825152&w=740&h=416',
-            title: 'Crypto Market Crush',
-            description: 'Bitcoin went through one of its worst crashes as it dumped by $16,000 in a matter of hours to a two-month low of $42,000'
+            image: 'https://img.tehnomaks.ru/img/prod/full/1534913919_5.jpg',
+            title: 'AMD анонсировала 96- и 128-ядерные процессоры EPYC',
+            description: '8 ноября 2021 года на виртуальном мероприятии Accelerated Data Center Premiere компания AMD представила серверные процессоры EPYC 4-го поколения, которые выпустит в 2022–2023 гг (ядра Zen 4 и Zen 4c).'
         },
         {
             id: nanoid(),
-            image: 'https://academy-public.coinmarketcap.com/optimized-uploads/595c5bf5e195465a959463a58705465d.jpg',
-            title: 'What Is Pera Finance?',
-            description: 'Pera Finance, an innovative yield farming protocol built on Binance Smart Chain (BSC), is looking to revitalize the token economy of projects that are struggling with this problem through an innovative new yield farming protocol.'
+            image: 'https://pbs.twimg.com/media/FGHgZ5hVUAIjnxP.jpg',
+            title: '9 декабря НАСА запустит новый рентгеновский телескоп IXPE',
+            description: 'Как указывает агентство, IXPE — первый в своём роде рентгеновский космический телескоп. Он не такой массивный, как флагманская обсерватория НАСА «Чандра». Вес IXPE составляет 300 кг, в то время как вес «Чандры» — 4,79 тысяч кг. При этом новый телескоп имеет довольно узкую специализацию. С помощью IXPE учёные рассчитывают измерить поляризацию космических рентгеновских лучей для дальнейшего понимания фундаментальной физики экстремальных и экзотических объектов во Вселенной, включая чёрные дыры и взорвавшиеся звезды.'
         },
         {
             id: nanoid(),
-            image: 'https://academy-public.coinmarketcap.com/optimized-uploads/7cba1d3d28e94d3f90d6317d66930cef.jpg',
-            title: 'What Is Livepeer?',
-            description: 'Livepeer is an Ethereum-based decentralized video streaming infrastructure that enables developers to bring their ideas to life affordably. It has been designed to provide an open-source video streaming infrastructure that anybody can use to deliver video media to their audience without paying heavy platform fees or being restricted to the features offered by centralized broadcasting solutions. '
+            image: 'https://habrastorage.org/webt/pq/68/qv/pq68qvqs78hvff0_-zctgmhux9s.jpeg',
+            title: 'AWS выпустила 64-ядерный Graviton3 — самый мощный ARM-процессор в мире',
+            description: 'Первое поколение Graviton вышло в конце 2018 года, а второе последовало через год. Теперь представлено третье поколение с интервалом уже в два года от предыдущего. На этот раз разработчики сделали акцент не на увеличении тактовой частоты или количества ядер, а на увеличении производительности и функциональности отдельных ядер: количество инструкций за такт в последнем звене конвейера обработки команд увеличено с 8 до 15.\n' +
+                '\n' +
+                'Основные технические характеристики Graviton3:\n' +
+                '64 ядра\n' +
+                'Тактовая частота: 2,6 ГГц\n' +
+                '50 млрд транзисторов\n' +
+                'Память: DDR5\n' +
+                'Скорость обмена данными с памятью: 300 ГБ/с'
         },
         {
             id: nanoid(),
-            image: 'https://academy-public.coinmarketcap.com/optimized-uploads/37846ea331724dda9603dd6875397e8d.png',
-            title: 'Good Security Habits',
-            description: 'We can state with confidence that the leaks did not come from CoinMarketCap servers. We ran a comprehensive security check and there is no trace of any security breach of our servers.'
+            image: 'https://habrastorage.org/r/w1560/getpro/habr/upload_files/afe/ec4/c59/afeec4c5962e32a9de542c5e1443f762.jpg',
+            title: 'РЖД в следующем году планируют запустить в эксплуатацию беспилотный электропоезд GoA3, где машинист контролирует движение без непосредственного участия в управлении',
+            description: 'Сертификат на электропоезд GoA3 получили в ноябре. Сам проект стартовал в 2015 году, когда НИИАС начал разрабатывать беспилотные технологии для маневровых локомотивов. В 2017 году на станции Лужская запустили первый беспилотный маневровый локомотив, а институт начал разработку системы технического зрения. К 2019 году удалось выпустить электропоезд с уровнем автоматизации GoA3, оснащенный сенсорами. В течение последующего года разработали усовершенствованную версию электропоезда. \n'
         },
         {
             id: nanoid(),
-            image: 'https://academy-public.coinmarketcap.com/optimized-uploads/659ddd4ae7ce4b1e8bbe30e0c064a71f.png',
-            title: 'Does BTC have \'upper hand\'?',
-            description: 'In recent years, a correlation has formed between cryptocurrencies and stocks. If Wall Street crashes, BTC and ETH tend to suffer a similar fate. But Bloomberg\'s Mike McGlone believes the mood music is starting to change. He points to how Bitcoin suffered a 50% pullback earlier this year, before dusting itself off and surging to new all-time highs.'
+            image: 'https://habrastorage.org/r/w1560/webt/_d/tn/5u/_dtn5uusmfyzhtcoqvghmkzzhna.jpeg',
+            title: 'В декабре 2021 года группа компаний Bosch начала массовое производство силовых полупроводников из карбида кремния (SiC)',
+            description: 'Их используют в электроприводах, на подстанциях ЛЭП, мощных радиопередатчиках и т. д. SiC-полупроводники способны выдерживать более высокое напряжение в более компактном корпусе и справляться с большим тепловыделением. Это позволяет уменьшить размеры инвертора для автомобильного двигателя на 70% и снизить требования к охлаждению. Благодаря более низкому сопротивлению включения и переключения, меньше энергии расходуется в виде тепла, что повышает энергоэффективность и дальность хода автомобиля. '
         },
         {
             id: nanoid(),
-            image: 'https://academy-public.coinmarketcap.com/optimized-uploads/f1a8f74106a34f84bb14c14d2da946c9.jpg',
-            title: 'Ripple encourages finance firms',
-            description: 'The University of Cambridge is building a decentralized carbon credit marketplace on the Tezos blockchain. It\'s hoped this will help finance "independently verifiable and accountable nature-based solutions" — supporting projects like rainforest conservation and reforestation. Tezos was chosen because it doesn\'t use an energy-hungry Proof-of-Work consensus mechanism like Bitcoin. '
+            image: 'https://habrastorage.org/getpro/habr/post_images/8e6/f7a/b76/8e6f7ab76c4d81f0e0ef254709798104.jpg',
+            title: 'Учёные из Университета Тасмании начали реализацию некоммерческого проекта "Чёрный ящик для планеты Земля',
+            description: 'Это массивный автономный самописец с выходом в интернет, на который будет записываться информация о климатических изменениях в течение последних десятилетий развития нашей цивилизации, данные про исчезающих животных, сокращения численности населения в некоторых регионах, потребление электроэнергии, а также заголовки популярных сообщений в соцсетях и новостей о ключевых событиях в мире. Учёные планируют окончить сборку самописца до конца 2022 года на западном побережье острова Тасмания. '
         }
     ]
 };

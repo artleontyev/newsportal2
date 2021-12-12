@@ -1,5 +1,4 @@
 import {BrowserRouter, Route, Routes,} from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
 import Dashboard from "./components/dashboard/Dashboard";
 import LogIn from "./components/auth/LogIn";
 import NewsDetails from "./components/news/NewsDetails";
@@ -11,7 +10,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header />
-                <Navbar/>
+
                 <Routes>
                     <Route exact path={'/'} element={<Dashboard/>}/>
                     <Route exact path={'/logIn'} element={<LogIn/>}/>
